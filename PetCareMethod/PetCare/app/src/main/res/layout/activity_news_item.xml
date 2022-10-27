@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imvNewsItem"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/avt"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvTitleNewsItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_toRightOf="@+id/imvNewsItem"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tvDescriptionNewsItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="nkfshohsdvido uihsoafdbvp"
+            android:layout_below="@+id/tvTitleNewsItem"
+            android:layout_toRightOf="@+id/imvNewsItem"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
